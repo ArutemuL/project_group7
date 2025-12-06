@@ -1,44 +1,235 @@
 .header {
-  padding: 20px 0;
+  background-color: #75d281;
 }
-.nav {
+
+.header-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  padding: 0 12px 0 20px;
 }
-.nav-logo {
-  display: inline-flex;
+
+.header-logo {
+  display: block;
+  padding-bottom: 14px;
+  padding-top: 14px;
+}
+
+.header-logo img {
+  width: 84px;
+  height: 36px;
+}
+
+.nav-list,
+.address {
+  display: none;
+}
+
+.button {
+  background-color: transparent;
+  display: flex;
   align-items: center;
   justify-content: center;
+  outline: none;
+  border: none;
+  width: 48px;
+  height: 48px;
+  padding: 0;
 }
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+
+.icon-burger {
+  fill: #030a06;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-link {
+
+.button:hover .icon-burger,
+.button:focus .icon-burger {
+  fill: #113916;
+  opacity: 0.6;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    padding: 0 16px 0 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header-container {
+    padding: 0 64px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header-logo {
+    padding-bottom: 13px;
+    padding-top: 13px;
+    margin-right: 175px;
+  }
+
+  .header-logo img {
+    width: 106px;
+    height: 45px;
+  }
+
+  .nav-list,
+  .address {
+    display: flex;
+  }
+
+  .button,
+  .mobile-menu {
+    display: none;
+  }
+
+  .nav-list {
+    gap: 32px;
+  }
+
+  .nav-item {
+    display: block;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .address-list {
+    display: flex;
+    gap: 16px;
+  }
+
+  .address-link {
+    display: block;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .address-link:hover,
+  .address-link:focus,
+  .nav-item:hover,
+  .nav-item:focus {
+    color: #113916;
+    opacity: 0.6;
+  }
+}
+
+/* Mobile menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #75d281;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.mobile-menu-container {
   position: relative;
-  display: block;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  transition: 200ms ease-in;
+  padding-bottom: 92px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
-}
-.nav-link::after {
-  content: '';
+.button-close {
+  padding: 0;
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%);
-  width: 110%;
-  height: 4px;
-  border-radius: 4px;
-  transform-origin: center;
-  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
+  top: 8px;
+  right: 12px;
+  width: 48px;
+  height: 48px;
+  border: none;
+  background-color: transparent;
 }
-.nav-link.active::after {
-  background: #747bff;
+
+.button-icon-close {
+  fill: #030a06;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-close:hover .button-icon-close,
+.button-close:focus .button-icon-close {
+  fill: #113916;
+  opacity: 0.6;
+}
+
+.mobile-nav {
+  padding-left: 4px;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu-logo {
+  width: 84px;
+}
+
+.mobile-nav-list {
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mobile-adress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nav-item,
+.mobile-nav-item,
+.address-link,
+.mobile-address-item {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item:hover,
+.nav-item:focus,
+.mobile-nav-item:hover,
+.mobile-nav-item:focus,
+.address-link:hover,
+.address-link:focus,
+.mobile-address-item:hover,
+.mobile-address-item:focus {
+  color: #113916;
+  opacity: 0.6;
+}
+
+.address-link,
+.mobile-address-item {
+  font-style: normal;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-container {
+    padding-left: 32px;
+    padding-bottom: 128px;
+  }
+
+  .mobile-nav {
+    padding-left: 0px;
+  }
+
+  .button-close {
+    right: 16px;
+  }
 }
