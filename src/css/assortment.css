@@ -27,7 +27,7 @@
   border-radius: 32px;
 }
 .assortment-product-info {
-  height: 113px;
+  min-height: 113px;
   margin-bottom: 16px;
 }
 .assortment-subtitle {
@@ -76,6 +76,7 @@
   }
   .assortment-item {
     max-width: 340px;
+    max-height: 593px;
     display: flex;
     flex-direction: column;
   }
