@@ -25,9 +25,9 @@
 }
 .assortment-image {
   border-radius: 32px;
+  margin-bottom: 16px;
 }
 .assortment-product-info {
-  min-height: 113px;
   margin-bottom: 16px;
 }
 .assortment-subtitle {
@@ -36,7 +36,6 @@
   font-size: 18px;
   line-height: 1.6;
   color: #030a06;
-  margin-top: 16px;
 }
 .assortment-text {
   font-family: 'Fira Sans', sans-serif;
