@@ -83,3 +83,21 @@
     margin-top: auto;
   }
 }
+@media screen and (min-width: 1440px) {
+  .assortment-title {
+    font-size: 48px;
+  }
+  .assortment-list {
+    row-gap: 64px;
+  }
+  .assortment-item {
+    max-width: 310px;
+  }
+  .assortment-button {
+    width: 310px;
+  }
+  .assortment-button:hover,
+  .assortment-button:focus {
+    opacity: 0.5;
+  }
+}
