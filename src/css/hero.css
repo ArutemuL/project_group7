@@ -1,0 +1,65 @@
+.container.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 288px;
+  background: #ebf8ed;
+}
+
+.title-hero {
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: left;
+  padding-bottom: 20px;
+  padding-top: 64px;
+}
+
+.p-hero {
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.6;
+  text-align: left;
+  padding-bottom: 24px;
+}
+
+.hero-image {
+  border-radius: 40px;
+  width: 288px;
+  height: 285px;
+  padding-bottom: 64px;
+  padding-top: 24px;
+}
+
+.buy-now-button {
+  display: inline-block;
+  background-color: #030a06;
+
+  border: 1px solid #030a06;
+  border-radius: 6px;
+  padding: 12px 24px;
+  width: 288px;
+  height: 50px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+  text-align: center;
+}
+.buy-now-button:hover,
+.buy-now-button:focus {
+  background: #030a06;
+  opacity: 0.5;
+}
+.buy-now-button:active {
+  background: #113916;
+  opacity: 0.6;
+}
+.buy-now-button:disabled {
+  background: #030a06;
+  opacity: 0.2;
+  pointer-events: none;
+}
