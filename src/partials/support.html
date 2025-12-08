@@ -1,0 +1,24 @@
+<section class="support">
+            <div class="container-support container">
+                <h2 class="support-title">Залишились питання? Зв'яжіться з нами!</h2>
+                <h3 class="support-text">Ми тут, щоб допомогти!</h3>
+                <form action="" method="" enctype="" class="support-form">
+                    <label for="name" class="support-label">
+                        Ім'я
+                        <input type="text" minlength="5" maxlength="64" name="name" id="name" placeholder="Іван" required class="support-input">
+                        <p class="text-invalid">Error name</p>
+                    </label>
+                    <label for="email" class="support-label">
+                        Електронна пошта
+                        <input type="email" name="email" id="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="hello@ecotote.com" required class="support-input">
+                        <p class="text-invalid">Error email</p>
+                    </label>
+                    <label for="message" class="support-label">
+                        Повідомлення
+                        <textarea name="message" maxlength="500" id="message" placeholder="Введіть своє повідомлення..." required class="support-input support-textarea"></textarea>
+                        <p class="text-invalid">Error text</p>
+                    </label>
+                    <button type="submit" class="support-button">Надіслати</button>
+                </form>
+            </div>
+        </section>
