@@ -65,3 +65,21 @@
 .assortment-button:active {
   opacity: 0.6;
 }
+@media screen and (min-width: 768px) {
+  .assortment {
+    padding: 64px 0 64px;
+  }
+  .assortment-list {
+    row-gap: 48px;
+    column-gap: 24px;
+  }
+  .assortment-item {
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+  }
+  .assortment-button {
+    width: 340px;
+    margin-top: auto;
+  }
+}
