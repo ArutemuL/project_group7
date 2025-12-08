@@ -54,10 +54,7 @@
   list-style: none;
 }
 
-.star-filled svg {
-  fill: #3ac04c;
-}
-.star-empty svg {
+.stars svg {
   fill: #3ac04c;
 }
 
@@ -78,20 +75,18 @@
   .feedbacks {
     padding: 64px 0;
   }
-  .feedbacks-item-inner {
-    max-width: 310px;
-    width: 100%;
+  .feedbacks-title {
+    font-size: 48px;
+    max-width: 560px;
+    text-align: center;
+    margin: 0 auto 80px;
   }
-
   .feedbacks-list {
     gap: 24px;
   }
   .feedbacks-item {
     display: flex;
     width: calc((100% - 24px * 3) / 4);
-  }
-  .feedbacks-title {
-    font-size: 48px;
   }
 
   .feedbacks-author {
