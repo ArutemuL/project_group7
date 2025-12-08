@@ -65,3 +65,39 @@
 .assortment-button:active {
   opacity: 0.6;
 }
+@media screen and (min-width: 768px) {
+  .assortment {
+    padding: 64px 0 64px;
+  }
+  .assortment-list {
+    row-gap: 48px;
+    column-gap: 24px;
+  }
+  .assortment-item {
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+  }
+  .assortment-button {
+    width: 340px;
+    margin-top: auto;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .assortment-title {
+    font-size: 48px;
+  }
+  .assortment-list {
+    row-gap: 64px;
+  }
+  .assortment-item {
+    max-width: 310px;
+  }
+  .assortment-button {
+    width: 310px;
+  }
+  .assortment-button:hover,
+  .assortment-button:focus {
+    opacity: 0.5;
+  }
+}
