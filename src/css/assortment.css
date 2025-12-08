@@ -96,4 +96,8 @@
   .assortment-button {
     width: 310px;
   }
+  .assortment-button:hover,
+  .assortment-button:focus {
+    opacity: 0.5;
+  }
 }
