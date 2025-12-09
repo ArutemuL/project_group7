@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #ebf8ed;
 }
 
 .title-hero {
@@ -20,16 +19,18 @@
   line-height: 1.6;
   text-align: left;
   padding-bottom: 24px;
+  font-size: 16px;
 }
 
 .hero-image {
   border-radius: 40px;
   width: 288px;
   height: 285px;
-  padding-bottom: 64px;
-  padding-top: 24px;
-  background-color: #ebf8ed;
+  margin: 0 auto;
+}
+.hero-picture {
   overflow: hidden;
+  margin-bottom: 64px;
 }
 
 .buy-now-button {
@@ -49,6 +50,7 @@
   line-height: 1.6;
   color: #fff;
   text-align: center;
+  margin-bottom: 20px;
 }
 .buy-now-button:hover,
 .buy-now-button:focus {
@@ -64,15 +66,13 @@
   opacity: 0.2;
   pointer-events: none;
 }
-.hero-picture {
-  background-color: #ebf8ed;
-}
 
 @media only screen and (min-width: 768px) {
   .container.hero-container {
+    padding-top: 32px;
     display: flex;
     flex-direction: column;
-    padding: 32px 32px 64px 32px;
+
     gap: 20px;
   }
   .text-hero {
@@ -99,10 +99,8 @@
   .hero-image {
     width: 704px;
     height: 267px;
-    height: auto;
-    border-radius: 40px;
-    padding: 0;
   }
+
   .p-hero {
     padding-bottom: 0;
   }
@@ -111,12 +109,7 @@
     border: 0;
   }
 }
-
 @media only screen and (min-width: 1440px) {
-  .container.hero-container {
-    padding: 32px 64px 64px 64px;
-    display: flex;
-  }
   .title-hero {
     width: 640px;
     font-size: 56px;
@@ -124,8 +117,13 @@
   .text-hero {
     width: 640px;
   }
+
   .hero-image {
     width: 1312px;
     height: 498px;
+  }
+  .hero-picture {
+    overflow: hidden;
+    border-radius: 40px;
   }
 }
