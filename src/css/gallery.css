@@ -57,16 +57,42 @@
         width: 768px;
     }
 
-    .gallery-title {
+    .gallery-title title {
         text-align: center;
         display: flex;
         flex-direction: row;
+        margin-bottom: 32px;
+
     }
 
     .gallery-list-item bag {
-        width: calc((100% - 24px) /2);
-        margin-bottom: 24px
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px 24px 26px ;
+        flex-basis: calc((100% - 24px) / 2);
     }
+
+    .gallery-list-item man {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px 24px 26px ;
+        flex-basis: calc((100% - 24px) /2);
+    }
+
+    .gallery-list-item park {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px 24px 26px ;
+        flex-basis: calc((100% - 24px) / 2);
+    }
+
+    .gallery-list-item girl {
+        display: flex;
+        flex-direction: column;
+        margin-bottom:24px 24px 26px ;
+        flex-basis: calc((100% - 24px) / 2);
+    }
+        
 }
 
 
@@ -80,7 +106,7 @@
         width: 1440px;}
     
 
-    .gallery-title {
+    .gallery-title title {
         font-size: 48px;
         margin-bottom: 64px;
         text-align: center;
@@ -89,6 +115,31 @@
     }
 
     .gallery-list-item bag {
-        width: calc((100% - 24px) /2);
-    }
+       display: flex;
+       flex-direction: column;
+       margin-bottom: 24px 24px 24px 24px;
+    flex-basis: calc((100% - 24px) / 2);
+   }
+
+   .gallery-list-item man {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px 24px 24px 24px ;
+    flex-basis: calc((100% - 24px) / 2);
 }
+
+.gallery-list-item park {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px 24px 24px 24px ;
+    flex-basis: calc((100% - 24px) / 2);
+}
+
+.gallery-list-item girl {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px 24px 24px 24px ;
+    flex-basis: calc((100% - 24px) / 2);
+}
+}
+
