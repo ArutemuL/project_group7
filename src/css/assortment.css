@@ -27,7 +27,7 @@
   margin-bottom: 16px;
 }
 .assortment-product-info {
-  height: 113px;
+  min-height: 113px;
   margin-bottom: 16px;
 }
 .assortment-subtitle {
