@@ -8,13 +8,13 @@
   width: 320px;
   height: 348px;
   background-image: linear-gradient(rgba(0,0,0,0.4)),
-    url(/src/img/about/about-m.jpg);
+    url(/img/about/about-m.jpg);
 }
 @media screen and (min-resolution: 2x) {
   .about-section {
     background-image: 
        linear-gradient(rgba(0,0,0,0.4)),
-      url(/src/img/about/about-m-x2.jpg);
+      url(/img/about/about-m-x2.jpg);
   }
 }
 
@@ -54,13 +54,13 @@
     width: 768px;
     height: 325px;
     background-image: linear-gradient(rgba(0,0,0,0.4)),
-      url(/src/img/about/about-t.jpg);
+      url(/img/about/about-t.jpg);
   }
 
   @media screen and (min-resolution: 2x) {
     .about-section {
       background-image:linear-gradient(rgba(0,0,0,0.4)),
-        url(/src/img/about/about-t-@2x.jpg);
+        url(/img/about/about-t-@2x.jpg);
     }
   }
 
@@ -87,13 +87,13 @@
     width: 1440px;
     height: 462px; 
     background-image: linear-gradient (rgba(0,0,0,0.4)),
-      url(/src/img/about/about-d.jpg);
+      url(/img/about/about-d.jpg);
   }
 
   @media screen and (min-resolution: 2x) {
     .about-section {
       background-image: linear-gradient(rgba(0,0,0,0.4)),
-        url(/src/img/about/about-d-@2x.jpg);
+        url(/img/about/about-d-@2x.jpg);
     }
   }
 
