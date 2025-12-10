@@ -67,14 +67,21 @@
     row-gap: 48px;
 }
 
-.advantages-item {
+/*  .advantages-item {
     max-width: 288px;
 }
+    */
 
 @media (min-width: 768px) {
     .container {
         width: 768px;
         padding: 64px 32px;
+    }
+
+    .advantages-divider {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
     }
 
     .advantages-list {
@@ -131,6 +138,8 @@
         padding: 64px;
     }
 
+
+
     .advantages-item {
         width: calc((100% - 72px) / 3);
     }
@@ -140,12 +149,17 @@
         margin-bottom: 80px;
     }
 
+
+
     .advantages-item-title {
         font-size: 32px;
         margin-bottom: 24px;
+        height: 90px;
     }
 
     .advantages-title {
         font-size: 48px;
     }
+
+
 }
