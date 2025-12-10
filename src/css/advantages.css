@@ -1,11 +1,6 @@
-.container {
-    width: 320px;
-    padding: 32px 16px;
-}
-
-
-.advantages-subtitle {
-    margin-bottom: 12px;
+.advantages {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .advantages-subtitle {
@@ -14,6 +9,7 @@
     font-size: 16px;
     line-height: 1.5;
     color: #030A06;
+    margin-bottom: 12px;
 }
 
 .advantages-title {
@@ -37,8 +33,9 @@
     margin-bottom: 48px;
 }
 
+
+
 .advantages-image {
-    border-radius: 32px;
     margin-bottom: 8px;
 }
 
@@ -63,8 +60,7 @@
 .advantages-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    row-gap: 48px;
+    gap: 48px;
 }
 
 /*  .advantages-item {
@@ -73,22 +69,9 @@
     */
 
 @media (min-width: 768px) {
-    .container {
-        width: 768px;
-        padding: 64px 32px;
-    }
-
-    .advantages-divider {
-        display: flex;
-        flex-direction: row;
-        gap: 24px;
-    }
-
-    .advantages-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        column-gap: 32px;
+    .advantages {
+        padding-top: 64px;
+        padding-bottom: 64px;
     }
 
     .advantages-item-title {
@@ -111,7 +94,10 @@
 
 
 
-    .advantages-tablet {
+    .advantages-item {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
         width: calc((100% - 24px) / 2);
     }
 
@@ -123,18 +109,25 @@
         margin-bottom: 24px;
     }
 
-    .advantages-name {
+    .advantages-text {
         margin-bottom: 32px;
+        font-size: 18px;
     }
 
     .advantages-image {
         margin-bottom: 32px;
     }
+
+    .advantages-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
 }
 
 @media (min-width: 1440px) {
-    .container {
-        width: 1440px;
+    .advantages {
+
         padding: 64px;
     }
 
@@ -161,5 +154,11 @@
         font-size: 48px;
     }
 
+    .advantages-list {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        column-gap: 32px;
+    }
 
 }
