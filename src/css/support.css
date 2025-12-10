@@ -129,6 +129,22 @@
     font-size: 16px;
     line-height: 1.6;
     color: #fff;
+    
+}
+
+.support-button:hover, .support-button:focus {
+    background-color: rgba(3, 10, 6, 0.5);
+    border-color: rgba(3, 10, 6, 0.5);
+}
+
+.support-button:active {
+    background-color: rgba(17, 57, 22, 0.6);
+    border-color: rgba(17, 57, 22, 0.6);
+}
+.container-support:disabled {   
+    background-color: rgba(3, 10, 6, 0.2);
+    border-color: rgba(3, 10, 6, 0.2);
+    cursor: not-allowed;
 }
 
 @media screen and (min-width: 768px) {
