@@ -80,6 +80,7 @@
     font-weight: 400;
     font-size: 16px;
     color: #030A06;
+    margin-bottom: 8px;
 }
 .support-input{
     margin-top: 8px;
@@ -128,7 +129,7 @@
     font-size: 16px;
     line-height: 1.6;
     color: #fff;
-    
+    margin: 24px 0 0 0;
 }
 
 .support-button:hover, .support-button:focus {
@@ -161,7 +162,6 @@
     }
     .support-button{
         width: 249px;
-        margin: 0 0;
     }
 }
 
@@ -178,7 +178,6 @@
     }
     .support-button{
         width: 198px;
-        margin: 0 0;
     }
     .support-input{
         width: 644px;
